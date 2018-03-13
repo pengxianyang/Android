@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/edit_background"
+
+    tools:context="com.mycompany.project_mid.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.mycompany.project_mid.MainActivity">
+
+            <!--<View-->
+            <!--android:id="@+id/add_new_line1"-->
+            <!--android:layout_width="368dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:background="@color/lineColor"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--android:layout_marginStart="24dp"-->
+            <!--android:layout_marginRight="0dp" />-->
+
+            <!--姓名-->
+            <ImageView
+                android:id="@+id/add_new_imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/zhaoyun"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/add_new_nameWrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_imageView">
+                <EditText
+                    android:id="@+id/add_new_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="姓名"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <View
+                android:id="@+id/add_new_line2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/lineColor"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_nameWrapper"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <!--生卒年月-->
+            <!--<TextView-->
+            <!--android:id="@+id/add_new_birth_textView"-->
+            <!--android:layout_width="86dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="生卒年月"-->
+            <!--android:textSize="18sp"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/add_new_line2"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--android:layout_marginStart="24dp"-->
+            <!--app:layout_constraintHorizontal_chainStyle="spread_inside"-->
+            <!--android:layout_marginTop="16dp" />-->
+
+            <EditText
+                android:id="@+id/add_new_birth_editText"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:hint="出生年月"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line2"
+                android:layout_marginStart="50dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="~"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line2"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/add_new_line3"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/add_new_birth_editText"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/add_new_death_editText"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="逝去年月"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/textView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line2" />
+
+            <View
+                android:id="@+id/add_new_line3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lineColor"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_birth_editText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!--籍贯-->
+            <EditText
+                android:id="@+id/add_new_nativePlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:hint="籍贯"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line3"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:id="@+id/add_new_line4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/lineColor"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_nativePlace"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!--性别选择-->
+            <TextView
+                android:id="@+id/add_new_sex_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="24dp" />
+
+            <RadioGroup
+                android:id="@+id/add_new_radioGroup_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line4"
+                app:layout_constraintLeft_toRightOf="@+id/add_new_sex_textView"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="32dp">
+                <RadioButton
+                    android:id="@+id/add_new_radioButtion_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+                <RadioButton
+                    android:id="@+id/add_new_radioButtion_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:layout_marginLeft="8dp"/>
+            </RadioGroup>
+
+            <View
+                android:id="@+id/add_new_line5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lineColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_sex_textView" />
+
+            <!--效属势力-->
+            <TextView
+                android:id="@+id/add_new_nation_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属势力"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="24dp" />
+
+            <RadioGroup
+                android:id="@+id/add_new_radioGroup_nation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toRightOf="@+id/add_new_nation_textView"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line5"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+                <RadioButton
+                    android:id="@+id/add_new_radioButtion_Wei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="魏" />
+
+                <RadioButton
+                    android:id="@+id/add_new_radioButtion_Shu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蜀"
+                    android:layout_marginLeft="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/add_new_radioButtion_Wu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="吴"
+                    android:layout_marginLeft="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/add_new_RadioButton_QiTa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:layout_marginLeft="8dp"/>
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/add_new_line6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lineColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_nation_textView" />
+
+            <TextView
+                android:id="@+id/Wen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文"
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_new_line6"/>
+
+            <TextView
+                android:id="@+id/value_Wen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@id/add_new_line6"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <SeekBar
+                android:id="@+id/add_new_seekBar_Wen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:progress="50"
+                android:max="100"
+                app:layout_constraintTop_toTopOf="@id/Wen"
+                app:layout_constraintBottom_toBottomOf="@id/Wen"
+                app:layout_constraintLeft_toLeftOf="@id/Wen"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/value_Wen"/>
+
+
+            <TextView
+                android:id="@+id/Wu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="武"
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/Wen"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/value_Wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@id/Wen"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <SeekBar
+                android:id="@+id/add_new_seekBar_Wu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:progress="50"
+                android:max="100"
+                app:layout_constraintTop_toTopOf="@id/Wu"
+                app:layout_constraintBottom_toBottomOf="@id/Wu"
+                app:layout_constraintLeft_toLeftOf="@id/Wu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/value_Wu"/>
+
+
+            <TextView
+                android:id="@+id/Yun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="运"
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/Wu"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/value_Yun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@id/Wu"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <SeekBar
+                android:id="@+id/add_new_seekBar_Yun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:progress="50"
+                android:max="100"
+                app:layout_constraintTop_toTopOf="@id/Yun"
+                app:layout_constraintBottom_toBottomOf="@id/Yun"
+                app:layout_constraintLeft_toLeftOf="@id/Yun"
+                app:layout_constraintRight_toLeftOf="@id/value_Yun"/>
+
+            <View
+                android:id="@+id/add_new_line7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/lineColor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Yun" />
+
+
+            <!--其他信息-->
+            <EditText
+                android:id="@+id/add_new_other_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:hint="其他信息"
+                android:minHeight="100dp"
+                android:layout_marginStart="24dp"
+                android:gravity="top"
+                app:layout_constraintTop_toBottomOf="@+id/add_new_line7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" />
+            
+
+            <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="32dp"-->
+                <!--android:background="@color/lineColor"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@id/add_new_other_editText"/>-->
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

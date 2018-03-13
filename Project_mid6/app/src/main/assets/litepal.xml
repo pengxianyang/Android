@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="PersonDataBase"></dbname>
+    <version value="1"></version>
+
+    <list>
+        <mapping class="com.mycompany.project_mid.Person"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lineColor">#BFBFBF</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="Moccasin">#ffe4b5</color>
+    <color name="OrangeRed">#ff4500</color>
+    <color name="AliceBlue">#f0f8ff</color>
+    <color name="DeepSkyBlue">#00bfff</color>
+    <color name="CrystalBlack">#a0292421</color>
+</resources>

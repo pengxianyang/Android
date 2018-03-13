@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/details_background">
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress_force"
+        android:layout_height="20dp"
+        android:layout_width="200dp"
+        app:rcBackgroundPadding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress_wisdom"
+        android:layout_height="20dp"
+        android:layout_width="200dp"
+        app:rcBackgroundPadding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progress_luck"
+        android:layout_height="20dp"
+        android:layout_width="200dp"
+        app:rcBackgroundPadding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赵云"
+        android:textColor="#000000"
+        android:textSize="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---- 赵子龙，参见！"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="162dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="武"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="262dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="综合"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:ems="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="380dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猛"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:ems="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="400dp"
+        />
+
+
+
+    <!--<com.github.lzyzsd.circleprogress.ArcProgress-->
+        <!--android:id="@+id/arc_progress_total"-->
+        <!--android:background="#214193"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_marginLeft="120dp"-->
+        <!--android:layout_marginTop="330dp"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:backgroundTint="#00000000"-->
+        <!--android:scrollbarSize="5dp"-->
+        <!--custom:arc_progress="72"-->
+        <!--custom:arc_bottom_text="综合"-->
+        <!--custom:arc_text_color="@color/OrangeRed"-->
+        <!--custom:arc_unfinished_color="@color/OrangeRed"-->
+        <!--&gt;-->
+
+    <!--</com.github.lzyzsd.circleprogress.ArcProgress>-->
+
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/donut_progress_total"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="350dp"
+        custom:donut_progress="30"
+        custom:donut_finished_stroke_width="30dp"
+        custom:donut_text="综合"
+        custom:donut_text_size="50sp"
+        >
+    </com.github.lzyzsd.circleprogress.DonutProgress>
+
+    <Button
+        android:id="@+id/detail_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

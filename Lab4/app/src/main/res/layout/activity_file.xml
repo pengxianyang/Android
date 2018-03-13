@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Editor"
+        android:textSize="45sp"
+        android:textColor="#800080"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editText_content_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"/>
+
+
+    <EditText
+        android:id="@+id/editText_content"
+        android:layout_above="@+id/button_save"
+        android:layout_below="@+id/editText_content_name"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left|top"
+        android:hint="File Content Here"
+         />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="SAVE"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@+id/button_load"
+        android:layout_alignBottom="@+id/button_load"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="LOAD"
+        android:textSize="20sp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="125dp"/>
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="CLEAR"
+        android:textSize="20sp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="240dp"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="DELETE"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="25dp" />
+
+
+
+</RelativeLayout>
